@@ -4,7 +4,7 @@ import Quiz from '../Quiz/Quiz';
 
 const Quizzes = () => {
     const quizData = useContext(QuizContext);
-    console.log(quizData)
+    // console.log(quizData)
     return (
         <section className="py-6 sm:py-12">
             <div className="container p-6 mx-auto space-y-8">

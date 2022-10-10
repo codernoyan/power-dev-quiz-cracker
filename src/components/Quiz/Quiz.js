@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Quiz = () => {
+const Quiz = ({ quiz }) => {
+    const { logo, name, total } = quiz;
     return (
-        <article className="flex flex-col dark:bg-gray-900">
-            <Link rel="noopener noreferrer" to="/" aria-label="Te nulla oportere reprimique his dolorum">
-                <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://source.unsplash.com/200x200/?fashion?1" />
-            </Link>
+        <article className="flex flex-col shadow-md">
+            <div>
+                <img alt="" className="object-cover w-full h-52 dark:bg-gray-100" src={logo} />
+            </div>
             <div className="flex flex-col flex-1 p-6">
                 <Link rel="noopener noreferrer" to="/" aria-label="Te nulla oportere reprimique his dolorum"></Link>
-                <Link rel="noopener noreferrer" to="/" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-400">Convenire</Link>
-                <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
-                <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-400">
-                    <span>June 1, 2020</span>
-                    <span>2.1K views</span>
+                <button className="text-xs tracking-wider uppercase font-bold bg-sky-400 text-white px-4 py-2">Give a Test</button>
+                <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">{name}</h3>
+                <div className="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-400">
+                    <span>Total Quizzes: {total}</span>
+                    {/* <span>2.1K views</span> */}
                 </div>
             </div>
         </article>
