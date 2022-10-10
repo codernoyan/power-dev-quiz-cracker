@@ -13,7 +13,7 @@ const Quiz = ({ quiz }) => {
                 <button className="text-xs tracking-wider uppercase font-bold bg-sky-400 text-white px-4 py-2">Give a Test</button>
                 <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">{name}</h3>
                 <div className="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-400">
-                    <span>Total Quizzes: {total}</span>
+                    <p className='font-semibold text-md'>Total Quizzes: {total}</p>
                     {/* <span>2.1K views</span> */}
                 </div>
             </div>
