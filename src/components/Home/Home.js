@@ -1,6 +1,6 @@
 import React from 'react';
 import headerImage from '../../assets/hero-image.jpg';
-import Quizes from '../Quizzes/Quizzes';
+import Quizzes from '../Quizzes/Quizzes';
 
 const Home = () => {
     return (
@@ -31,7 +31,7 @@ const Home = () => {
             </div>
 
             {/* quiz blogs */}
-            <Quizes></Quizes>
+            <Quizzes></Quizzes>
         </div>
     );
 };

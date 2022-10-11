@@ -1,5 +1,5 @@
 import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Answer from '../Answer/Answer';
 
@@ -21,7 +21,6 @@ const Questions = ({ question, index }) => {
                             <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                         </svg>
                     </button>
-                    <ToastContainer></ToastContainer>
                 </div>
                 <div className='mb-4'>
                     {/* <h4 className='text-xl font-bold'>{`Quiz no.${index + 1} ${question.question}`}</h4> */}
