@@ -13,7 +13,7 @@ const Quiz = ({ quiz }) => {
     return (
         <article className="flex flex-col shadow-md">
             <div>
-                <img alt="" className="object-cover w-full h-52 dark:bg-gray-100" src={logo} />
+                <img alt="" className="object-cover w-full h-64 dark:bg-gray-100" src={logo} />
             </div>
             <div className="flex flex-col flex-1 p-6">
                 <Link rel="noopener noreferrer" to="/" aria-label="Te nulla oportere reprimique his dolorum"></Link>
