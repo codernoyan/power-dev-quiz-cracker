@@ -59,8 +59,8 @@ const Header = () => {
                         </svg>
                     </button>
                     {isMenuOpen && (
-                        <div className="absolute top-0 left-0 w-full">
-                            <div className="p-5 bg-sky-100 border rounded shadow-sm">
+                        <div className="absolute top-0 left-0 w-full z-10">
+                            <div className="p-5 bg-white border rounded shadow-sm">
                                 <div className="flex items-center justify-between mb-4">
                                     <div>
                                         <NavLink
@@ -98,7 +98,7 @@ const Header = () => {
                                         <li>
                                             <NavLink
                                                 to="/statistics"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
                                             >
                                                 Statistics
                                             </NavLink>
@@ -106,7 +106,7 @@ const Header = () => {
                                         <li>
                                             <NavLink
                                                 to="/blogs"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
                                             >
                                                 Blogs
                                             </NavLink>
