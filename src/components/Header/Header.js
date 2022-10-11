@@ -90,24 +90,21 @@ const Header = () => {
                                         <li>
                                             <NavLink
                                                 to="/home"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                            >
+                                                className={({isActive})=> isActive ? 'font-medium tracking-wide text-gray-700 transition-colors duration-200 border-b-4 border-sky-300': 'font-medium tracking-wide text-gray-700 transition-colors duration-200'}>                                                
                                                 Home
                                             </NavLink>
                                         </li>
                                         <li>
                                             <NavLink
                                                 to="/statistics"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
-                                            >
+                                                className={({isActive})=> isActive ? 'font-medium tracking-wide text-gray-700 transition-colors duration-200 border-b-4 border-sky-300': 'font-medium tracking-wide text-gray-700 transition-colors duration-200'}>
                                                 Statistics
                                             </NavLink>
                                         </li>
                                         <li>
                                             <NavLink
                                                 to="/blogs"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200"
-                                            >
+                                                className={({isActive})=> isActive ? 'font-medium tracking-wide text-gray-700 transition-colors duration-200 border-b-4 border-sky-300': 'font-medium tracking-wide text-gray-700 transition-colors duration-200'}>
                                                 Blogs
                                             </NavLink>
                                         </li>
