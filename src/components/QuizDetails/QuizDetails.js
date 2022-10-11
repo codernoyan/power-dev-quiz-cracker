@@ -1,6 +1,5 @@
-import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Question from '../Question/Question';
+import Questions from '../Questions/Questions';
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
@@ -36,12 +35,9 @@ const QuizDetails = () => {
                         <span className="relative"></span>{name} Quizzes</span>
                 </h2>
             </div>
-            <div className="grid gap-5 mb-8 md:grid-cols-2">
+            <div>
                 {
-                    questions.map(question => <Question
-                        key={question.id}
-                        question={question}
-                    ></Question>)
+                    questions.map((question, index) => <Questions key={question.id} index={index} question={question}></Questions>)
                 }
             </div>
         </div>
