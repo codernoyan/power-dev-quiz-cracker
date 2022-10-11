@@ -74,8 +74,7 @@ const Header = () => {
                                     <div>
                                         <button
                                             className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                            onClick={() => setIsMenuOpen(false)}
-                                        >
+                                            onClick={() => setIsMenuOpen(false)}>
                                             <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                                                 <path
                                                     fill="currentColor"
