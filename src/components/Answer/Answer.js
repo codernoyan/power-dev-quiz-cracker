@@ -5,9 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 const Answer = ({ answer, correctAnswer }) => {
     const handleTest = () => {
         if (answer === correctAnswer) {
-            toast.success('Wow Correct Answer!!', {autoClose: 500})            
+            toast.success('Wow Correct Answer!!', {autoClose: 700, position: "top-center",})            
         } else {
-            toast.error('Wrong Answer!!', {autoClose: 500})
+            toast.error('Wrong Answer!!', {autoClose: 700, position: "top-center",})
         }
     }
     return (
