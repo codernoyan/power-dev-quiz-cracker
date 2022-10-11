@@ -2,8 +2,8 @@ import React from 'react';
 import Answer from '../Answer/Answer';
 
 const Questions = ({ question }) => {
-    // console.log(question)
-    const { options, id, index } = question;
+    console.log(question)
+    const { options, id, index, correctAnswer } = question;
 
     return (
         <div>
@@ -13,7 +13,8 @@ const Questions = ({ question }) => {
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                     {
-                        options.map((answer, index) => <Answer key={index} answer={answer}></Answer>)
+                        options.map((answer, index) => <Answer key={index} answer={answer}
+                            correctAnswer={correctAnswer}></Answer>)
                     }
                 </div>
             </div>
